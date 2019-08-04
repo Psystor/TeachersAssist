@@ -1,0 +1,17 @@
+<form class="form add-pupil" [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)">
+    <mat-form-field>
+        <input matInput #first
+            required
+            placeholder="Vorname"
+            formControlName="firstName"/>
+    </mat-form-field>
+    
+    <mat-form-field>
+        <input matInput
+            required
+            placeholder="Name"
+            formControlName="lastName"/>
+    </mat-form-field>
+
+    <button type="submit" mat-button mat-raised-button> Einfügen </button>
+</form>

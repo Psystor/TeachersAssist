@@ -1,0 +1,17 @@
+<form class="form add-task" [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)">
+    <mat-form-field>
+        <input matInput #first
+            required
+            placeholder="Bezeichnung"
+            formControlName="name"/>
+    </mat-form-field>
+    
+    <mat-form-field>
+        <input matInput
+            required
+            placeholder="Gewichtung"
+            formControlName="weight"/>
+    </mat-form-field>
+
+    <button type="submit" mat-button mat-raised-button> Einfügen </button>
+</form>

@@ -39,6 +39,7 @@ export class PupilsService {
 
 
   constructor() {
+    console.log(JSON.stringify(this.pupils$))
     let stored;
     try {
       stored = JSON.parse(localStorage.getItem('knownPupils'));

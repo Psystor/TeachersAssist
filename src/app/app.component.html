@@ -4,7 +4,6 @@
     <a mat-tab-link *ngFor="let link of pages"
        routerLink="{{link.path}}"
        routerLinkActive="active"
-       (click)="activeLink = link"
        routerLinkActive #rla="routerLinkActive"
        [active]="rla.isActive"> {{link.name}} </a>
 </nav>
